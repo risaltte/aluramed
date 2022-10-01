@@ -41,7 +41,7 @@ main .day {
     flex-direction: column;
     background: var(--white);
 
-    padding: 1rem;
+    margin-bottom: 1rem;
     border-radius: 0.5rem;
 }
 
@@ -50,7 +50,7 @@ main .day {
     align-items: flex-start;
     justify-content: space-between;
 
-    padding: 1rem 0;
+    padding: 1rem 1rem;
 }
 
 .card-header-top {
@@ -122,7 +122,7 @@ main .day {
 }
 
 .card-body {
-    
+    padding: 0 1rem 1rem;
 }
 
 .card-body-text {
