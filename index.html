@@ -365,18 +365,19 @@
         </div>        
     </main>
 
-    <div id="button-actions">
-        <div>
-            <span><small>Nova consulta na casa do paciente</small></span> 
-            <button id="buttom-add-presential"><i class="bi bi-geo-alt"></i></button>
+    <div id="overlay"></div>
+    <div id="buttons-floating-container">
+        <div class="button-container">
+            <span class="button-label">Nova consulta na casa do paciente</span> 
+            <button class="button-floating" id="buttom-add-presential"><i class="bi bi-geo-alt"></i></button>
         </div> 
 
-        <div>
-            <span><small>Nova consulta por vídeo</small></span> 
-            <button id="buttom-add-video"><i class="bi bi-camera-video"></i></button>
+        <div class="button-container">
+            <span class="button-label">Nova consulta por vídeo</span> 
+            <button class="button-floating" id="buttom-add-video"><i class="bi bi-camera-video"></i></button>
         </div> 
 
-        <button id="buttom-add"><i class="bi bi-plus"></i></button>
+        <button class="button-floating" id="buttom-add"><i class="bi bi-plus"></i></button>
     </div>
 
     <footer class="footer">
@@ -399,5 +400,7 @@
             </a> 
         </nav>           
     </footer>
+
+    <script src="./js/home.js"></script>
 </body>
 </html>
