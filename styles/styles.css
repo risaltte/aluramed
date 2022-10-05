@@ -26,33 +26,45 @@
 
 main {
     padding: 0.5rem 1rem;
-}
-
-
-
-main .day {
-    padding: 0.5rem 0;
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-div.card + div.day {
-    margin-top: 1rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 
 
 /* CARDS */
+.cards-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-container .day {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+div.cards-container + div.cards-container {
+    margin-top: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
 
 .card {
     display: flex;
     flex-direction: column;
+    flex: 1;
+
     background: var(--white);
 
     margin-bottom: 1rem;
     border-radius: 0.5rem;
 
-    max-width: 400px;
+    min-width: 292px;
+    max-width: 738px;
 }
 
 .card-header {
@@ -210,7 +222,7 @@ div.card + div.day {
     filter: brightness(0.9);
 }
 
-main .card:last-child {
+main .cards-container:last-child {
     margin-bottom: calc(3.625rem + 1rem);
 }
 
@@ -348,3 +360,25 @@ main .card:last-child {
 }
 
 
+
+/* LAYOUT TABLET */
+@media(min-width: 768px) {
+    main {
+        padding: 0.5rem 2rem;
+    }
+
+    .cards-container {
+        
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;        
+    }
+
+    .card {
+        max-width: 340px;
+        margin-bottom: 0;
+    }
+}
