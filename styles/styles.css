@@ -222,7 +222,7 @@ div.cards-container + div.cards-container {
     filter: brightness(0.9);
 }
 
-main .cards-container:last-child {
+main div.cards-container:nth-last-child(2) {
     margin-bottom: calc(3.625rem + 1rem);
 }
 
@@ -239,6 +239,7 @@ main .cards-container:last-child {
 
     position: fixed;
     bottom: 0;
+    left: 0;
 
     z-index: 1;
 }
@@ -382,6 +383,9 @@ main .cards-container:last-child {
         margin-bottom: 0;
     }
 }
+
+
+/* LAYOUTS DESKTOPS */
 
 @media(min-width: 1024px) {
     .cards {       
