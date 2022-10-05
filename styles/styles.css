@@ -382,3 +382,24 @@ main .cards-container:last-child {
         margin-bottom: 0;
     }
 }
+
+@media(min-width: 1024px) {
+    .cards {       
+        gap: 1rem;
+    }
+
+    .card {
+        max-width: 311px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .cards {       
+        gap: 1rem;
+    }
+
+    .card {
+        max-width: 340px;
+        min-width: 340px;
+    }
+}
