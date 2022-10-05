@@ -227,9 +227,9 @@ main .cards-container:last-child {
 }
 
 
-/* FOOTER */
+/* NAV */
 
-.footer {
+.nav-container {
     background: var(--white);
     padding: 0.5rem 0.875rem;
     box-shadow: 0px -0.25rem 0.5rem rgba(0, 0, 0, 0.06);
@@ -243,34 +243,34 @@ main .cards-container:last-child {
     z-index: 1;
 }
 
-.footer-nav {
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.footer-nav-link {
+.nav-link {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.footer-nav-link:hover {
+.nav-link:hover {
     filter: brightness(0.9);
 }
 
-.footer-nav-link i {
+.nav-link i {
     font-size: 1.5rem;
     margin-bottom: 0.125rem;
     color: var(--gray-400);
 }
 
-.footer-nav-link span {
+.nav-link span {
     font-size: 0.75rem;
     color: var(--gray-400);
 }
 
-.footer-nav-link.active i, .footer-nav-link.active span {
+.nav-link.active i, .nav-link.active span {
     color: var(--blue);
 }
 
