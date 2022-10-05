@@ -25,6 +25,9 @@
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+
     padding: 0.5rem 1rem;
     width: 100%;
     margin: 0 auto;
@@ -388,6 +391,14 @@ main div.cards-container:nth-last-child(2) {
 /* LAYOUTS DESKTOPS */
 
 @media(min-width: 1024px) {
+    main {
+        flex-direction: row;
+    }
+
+    .content-container, .header {
+        margin-left: 250px;
+    }
+
     .cards {       
         gap: 1rem;
     }
@@ -395,6 +406,34 @@ main div.cards-container:nth-last-child(2) {
     .card {
         max-width: 311px;
     }
+
+    .nav-container {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 250px;
+
+        padding: 2rem 1rem;
+
+       z-index: 1;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;        
+    }
+
+    .nav-link {
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav-link span {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
 }
 
 @media(min-width: 1400px) {
