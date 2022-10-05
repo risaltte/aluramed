@@ -7,8 +7,8 @@
 }
 
 .header-image-perfil {
-    width: 57px;
-    height: 57px;
+    width: 3.562rem;
+    height: 3.562rem;
     border-radius: 50%;
     margin-right: 1rem;
 }
@@ -51,6 +51,8 @@ div.card + div.day {
 
     margin-bottom: 1rem;
     border-radius: 0.5rem;
+
+    max-width: 400px;
 }
 
 .card-header {
@@ -67,8 +69,8 @@ div.card + div.day {
 }
 
 .card-header-avatar {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     margin-right: 1rem;
 }
