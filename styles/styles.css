@@ -34,6 +34,24 @@ main {
 }
 
 
+/* FORM */
+#add-appointment-action {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    margin: 1rem 0 0.5rem;
+}
+
+.add-appointment-container {
+    display: flex;
+    flex-direction: column;
+
+    background: var(--white);
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+}
 
 /* CARDS */
 .cards-container {
