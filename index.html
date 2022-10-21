@@ -26,15 +26,16 @@
         </div>
     </header>
 
-    <main>
+    <main>       
         
-        
-        <!-- Campo de texto para o nome do paciente
+        <!-- 
+        Campo de texto para o nome do paciente
         Campo de seleção de tipo de consulta
         Campo para informar a data da consulta
         Campo para informar o horário da consulta
         Campo para informar observações
-        Botão para salvar a nova consulta -->
+        Botão para salvar a nova consulta 
+        -->
 
         <div class="content-container">
             <a href="#" type="button" id="add-appointment-action"><i class="bi bi-plus-circle-fill"></i><span> Agendar consulta</span></a>
@@ -43,6 +44,15 @@
                     <div class="input-group">
                         <label class="input-label" for="patient-name">Nome do paciente</label>
                         <input class="input-field" type="text" name="patient-name" id="patient-name" placeholder="Nome completo">
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label" for="appointment-type">Tipo da consulta</label>
+                        <select name="appointment-type" id="appointment-type" required>
+                            <option value="" disabled selected hidden>Selecione o tipo</option> <!-- Placeholder select -->
+                            <option value="local">Consulta local</option>
+                            <option value="remote">Consulta remota</option>
+                        </select>
                     </div>
                 </form>
             </div>

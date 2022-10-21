@@ -449,29 +449,48 @@ main div.cards-container:last-child {
         gap: 0.5rem;
     }
 
+    .input-group + .input-group {
+        margin-top: 1rem;
+    }
+
     .input-label {
         font-size: 1rem;
         color: var(--gray-500);
     }
 
-    .input-field {
+    .input-field, select {
         padding: 1rem;
         background: var(--white);
         border: 1px solid transparent;
         border-radius: 0.5rem;
-    }
+        font-size: 1rem;
+    }    
 
-    .input-field::placeholder {
+    .input-field::placeholder, select option::placeholder {
         color: var(--gray-200);
     }
 
-    .input-field:hover {
+    .input-field:hover, select:hover {
         color: var(--gray-350);
         border: 1px solid var(--gray-200);
     }
 
-    .input.field:focus {
-        
+    .input-field:hover::placeholder, select:hover::placeholder {
+        color: var(--gray-350);
+    }
+
+    .input-field:focus, select:focus {
+        outline: 0;
+        border: 2px solid var(--blue);
+    }    
+
+    select option {
+        color: var(--gray-700);
+    }
+
+    /* PLACEHOLDER SELECT - Para funcionar precisa colocar colocar o select como required */
+    select:invalid { 
+        color: var(--gray-200);
     }
 
 
