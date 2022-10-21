@@ -36,7 +36,7 @@ main {
 
 /* FORM */
 #add-appointment-action {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 0.25rem;
 
@@ -44,14 +44,14 @@ main {
 }
 
 .add-appointment-container {
-    display: flex;
-    flex-direction: column;
+    display: none;
 
-    background: var(--white);
+    background: #F3F3F3;
     border-radius: 0.5rem;
     padding: 1rem;
-
 }
+
+
 
 /* CARDS */
 .cards-container {
@@ -425,6 +425,57 @@ main div.cards-container:last-child {
         margin-left: 250px;
     }
 
+
+    /* FORM */
+    #add-appointment-action {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        margin: 1rem 0 0.5rem;
+    }
+
+    .add-appointment-container {
+        display: flex;
+
+        background: #F3F3F3;
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .input-label {
+        font-size: 1rem;
+        color: var(--gray-500);
+    }
+
+    .input-field {
+        padding: 1rem;
+        background: var(--white);
+        border: 1px solid transparent;
+        border-radius: 0.5rem;
+    }
+
+    .input-field::placeholder {
+        color: var(--gray-200);
+    }
+
+    .input-field:hover {
+        color: var(--gray-350);
+        border: 1px solid var(--gray-200);
+    }
+
+    .input.field:focus {
+        
+    }
+
+
+
     .cards {       
         gap: 1rem;
     }
@@ -479,6 +530,7 @@ main div.cards-container:last-child {
     }    
 
     #buttons-floating-container {
+        display: none;
         bottom: 2rem;
     }
 
