@@ -182,65 +182,38 @@ div.cards-container + div.cards-container {
     gap: 1rem;
 }
 
-.button-video-call {
+.button {
     flex: 1;
-    background: var(--orange);
-    color: var(--white);
     padding: 0.812rem 1rem;
     height: 3rem;
-    
-    border: none;
-    border-radius: 0.5rem;
-
-    box-shadow: 0px 4px 16px rgba(255, 176, 80, 0.16);
-
     font-size: 0.875rem;
     font-weight: 500;
+
+    border-radius: 0.5rem;
     transition: filter 0.2s;
 }
 
-.button-video-call:hover {
+.button:hover {
     filter: brightness(0.9);
+}
+
+.button-video-call {    
+    background: var(--orange);
+    color: var(--white); 
+    border: none;
+    box-shadow: 0px 4px 16px rgba(255, 176, 80, 0.16);
 }
 
 .button-audio-call {
-    flex: 1;
-    padding: 0.812rem 1rem;
-    height: 3rem;
     background: var(--white);
-
     border: 1px solid var(--gray-100);
-    border-radius: 0.5rem;
-
-    font-size: 0.875rem;
-    font-weight: 500;
-
-    transition: filter 0.2s;
-}
-
-.button-audio-call:hover {
-    filter: brightness(0.9);
 }
 
 .button-show-address {
-    flex: 1;
     background: var(--blue);
-    color: var(--white);
-    padding: 0.812rem 1rem;
-    height: 3rem;
-    
+    color: var(--white);    
     border: none;
-    border-radius: 0.5rem;
-
     box-shadow: 0px 4px 16px rgba(72, 148, 255, 0.16);
-
-    font-size: 0.875rem;
-    font-weight: 500;
-    transition: filter 0.2s;
-}
-
-.button-show-address:hover {
-    filter: brightness(0.9);
 }
 
 main div.cards-container:last-child {
@@ -249,7 +222,6 @@ main div.cards-container:last-child {
 
 
 /* NAV */
-
 .nav-container {
     background: var(--white);
     padding: 0.5rem 0.875rem;
@@ -299,7 +271,6 @@ main div.cards-container:last-child {
 
 
 /* BUTTONS ACTIONS */
-
 #overlay {
     position: fixed;
     top: 0;
@@ -415,7 +386,6 @@ main div.cards-container:last-child {
 
 
 /* LAYOUTS DESKTOPS */
-
 @media(min-width: 992px) {
     main {
         flex-direction: row;
@@ -425,14 +395,22 @@ main div.cards-container:last-child {
         margin-left: 250px;
     }
 
-
     /* FORM */
     #add-appointment-action {
         display: flex;
         align-items: center;
         gap: 0.25rem;
 
+        color: var(--blue);
+        font-weight: 500;
+
         margin: 1rem 0 0.5rem;
+        transition: filter text-decoration 0.2s;
+    }
+
+    #add-appointment-action:hover {
+        filter: brightness(0.8);
+        text-decoration: underline;
     }
 
     .add-appointment-container {
@@ -440,7 +418,15 @@ main div.cards-container:last-child {
 
         background: #F3F3F3;
         border-radius: 0.5rem;
+        border: 1px solid var(--gray-200);
         padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .add-appointment-container form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 
     .input-group {
@@ -450,7 +436,7 @@ main div.cards-container:last-child {
     }
 
     .input-group + .input-group {
-        margin-top: 1rem;
+        /* margin-left: 1rem; change for gap on .add-appointment-container form */
     }
 
     .input-label {
@@ -482,6 +468,7 @@ main div.cards-container:last-child {
     .input-field:focus, select:focus {
         outline: 0;
         border: 2px solid var(--blue);
+        color: var(--gray-700);
     }    
 
     select option {
@@ -494,6 +481,45 @@ main div.cards-container:last-child {
     }
 
 
+     /* input-groups with */
+     div.patient-name {
+        flex: 2;
+    }
+
+    div.appointment-type {
+        flex: 1;
+    }
+
+    div.appointment-date, 
+    div.appointment-time {
+        width: 20%;
+    }
+
+    div.comments {
+        width: 100%;
+    }
+
+    .form-buttons {
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 16;
+    }
+
+    #button-form-cancel {
+        flex-grow: 0;
+        border: 2px solid var(--blue);
+        color: var(--blue);
+    }
+
+    #button-form-save {
+        flex-grow: 0;
+        background-color: var(--blue);
+        color: var(--white);
+        border: none;
+        margin-left: 0.5rem;
+    }
 
     .cards {       
         gap: 1rem;

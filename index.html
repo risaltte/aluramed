@@ -26,33 +26,51 @@
         </div>
     </header>
 
-    <main>       
-        
-        <!-- 
-        Campo de texto para o nome do paciente
-        Campo de seleção de tipo de consulta
-        Campo para informar a data da consulta
-        Campo para informar o horário da consulta
-        Campo para informar observações
-        Botão para salvar a nova consulta 
-        -->
-
+    <main>    
         <div class="content-container">
-            <a href="#" type="button" id="add-appointment-action"><i class="bi bi-plus-circle-fill"></i><span> Agendar consulta</span></a>
+            <a href="#" type="button" id="add-appointment-action">
+                <i class="bi bi-plus-circle-fill"></i>
+                <span> Agendar consulta</span>
+            </a>
+
             <div class="add-appointment-container">
                 <form>
-                    <div class="input-group">
+                    <div class="input-group patient-name">
                         <label class="input-label" for="patient-name">Nome do paciente</label>
                         <input class="input-field" type="text" name="patient-name" id="patient-name" placeholder="Nome completo">
                     </div>
 
-                    <div class="input-group">
+                    <div class="input-group appointment-type">
                         <label class="input-label" for="appointment-type">Tipo da consulta</label>
                         <select name="appointment-type" id="appointment-type" required>
                             <option value="" disabled selected hidden>Selecione o tipo</option> <!-- Placeholder select -->
                             <option value="local">Consulta local</option>
                             <option value="remote">Consulta remota</option>
                         </select>
+                    </div>
+
+                    <div class="input-group appointment-date">
+                        <label class="input-label" for="appointment-date">Data</label>
+                        <input class="input-field" type="date" name="appointment-date" id="appointment-date">
+                    </div>
+                    
+                    <div class="input-group appointment-time">
+                        <label class="input-label" for="appointment-time">Hora</label>
+                        <input class="input-field" type="time" name="appointment-time" id="appointment-time">
+                    </div>
+
+                    <div class="input-group comments">
+                        <label class="input-label" for="comments">Observações</label>
+                        <textarea class="input-field" type="text" name="comments" id="comments"></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="button" class="button" id="button-form-cancel">
+                            Cancelar
+                        </button>
+                        <button type="submit" class="button" id="button-form-save">
+                            Salvar
+                        </button>
                     </div>
                 </form>
             </div>
@@ -87,8 +105,8 @@
                             <p class="card-body-text">14:00 - 15:00 (1 hora)</p>
 
                             <div class="card-body-buttons">
-                                <button class="button-video-call">Ligar por vídeo</button>
-                                <button class="button-audio-call">Ligar por áudio</button>
+                                <button class="button button-video-call">Ligar por vídeo</button>
+                                <button class="button button-audio-call">Ligar por áudio</button>
                             </div>
                         </div>
                     </div>
@@ -117,7 +135,7 @@
                             <p class="card-body-text">16:00 - 17:00 (1 hora)</p>
 
                             <div class="card-body-buttons">
-                                <button class="button-show-address">Ver endereço</button>
+                                <button class="button button-show-address">Ver endereço</button>
                             </div>
                         </div>
                     </div>
@@ -146,8 +164,8 @@
                             <p class="card-body-text">17:20 - 18:00 (40 minutos)</p>
 
                             <div class="card-body-buttons">
-                                <button class="button-video-call">Ligar por vídeo</button>
-                                <button class="button-audio-call">Ligar por áudio</button>
+                                <button class="button button-video-call">Ligar por vídeo</button>
+                                <button class="button button-audio-call">Ligar por áudio</button>
                             </div>
                         </div>
                     </div>
@@ -184,7 +202,7 @@
                             <p class="card-body-text">18:00 - 19:00 (1 hora)</p>
 
                             <div class="card-body-buttons">
-                                <button class="button-show-address">Ver endereço</button>
+                                <button class="button button-show-address">Ver endereço</button>
                             </div>
                         </div>
                     </div>
@@ -213,8 +231,8 @@
                             <p class="card-body-text">14:00 - 15:00 (1 hora)</p>
 
                             <div class="card-body-buttons">
-                                <button class="button-video-call">Ligar por vídeo</button>
-                                <button class="button-audio-call">Ligar por áudio</button>
+                                <button class="button button-video-call">Ligar por vídeo</button>
+                                <button class="button button-audio-call">Ligar por áudio</button>
                             </div>
                         </div>
                     </div>
@@ -243,8 +261,8 @@
                             <p class="card-body-text">17:20 - 18:00 (40 minutos)</p>
 
                             <div class="card-body-buttons">
-                                <button class="button-video-call">Ligar por vídeo</button>
-                                <button class="button-audio-call">Ligar por áudio</button>
+                                <button class="button button-video-call">Ligar por vídeo</button>
+                                <button class="button button-audio-call">Ligar por áudio</button>
                             </div>
                         </div>
                     </div>
@@ -273,7 +291,7 @@
                             <p class="card-body-text">16:00 - 17:00 (1 hora)</p>
 
                             <div class="card-body-buttons">
-                                <button class="button-show-address">Ver endereço</button>
+                                <button class="button button-show-address">Ver endereço</button>
                             </div>
                         </div>
                     </div>
@@ -310,7 +328,7 @@
                             <p class="card-body-text">18:00 - 19:00 (1 hora)</p>
 
                             <div class="card-body-buttons">
-                                <button class="button-show-address">Ver endereço</button>
+                                <button class="button button-show-address">Ver endereço</button>
                             </div>
                         </div>
                     </div>
@@ -339,8 +357,8 @@
                             <p class="card-body-text">14:00 - 15:00 (1 hora)</p>
 
                             <div class="card-body-buttons">
-                                <button class="button-video-call">Ligar por vídeo</button>
-                                <button class="button-audio-call">Ligar por áudio</button>
+                                <button class="button button-video-call">Ligar por vídeo</button>
+                                <button class="button button-audio-call">Ligar por áudio</button>
                             </div>
                         </div>
                     </div>
@@ -369,8 +387,8 @@
                             <p class="card-body-text">17:20 - 18:00 (40 minutos)</p>
 
                             <div class="card-body-buttons">
-                                <button class="button-video-call">Ligar por vídeo</button>
-                                <button class="button-audio-call">Ligar por áudio</button>
+                                <button class="button button-video-call">Ligar por vídeo</button>
+                                <button class="button button-audio-call">Ligar por áudio</button>
                             </div>
                         </div>
                     </div>
@@ -399,7 +417,7 @@
                             <p class="card-body-text">16:00 - 17:00 (1 hora)</p>
 
                             <div class="card-body-buttons">
-                                <button class="button-show-address">Ver endereço</button>
+                                <button class="button button-show-address">Ver endereço</button>
                             </div>
                         </div>
                     </div>
