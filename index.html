@@ -40,13 +40,25 @@
                         <input class="input-field" type="text" name="patient-name" id="patient-name" placeholder="Nome completo">
                     </div>
 
-                    <div class="input-group appointment-type">
+                    <!-- <div class="input-group appointment-type">
                         <label class="input-label" for="appointment-type">Tipo da consulta</label>
                         <select name="appointment-type" id="appointment-type" required>
-                            <option value="" disabled selected hidden>Selecione o tipo</option> <!-- Placeholder select -->
+                            <option value="" disabled selected hidden>Selecione o tipo</option> 
                             <option value="local">Consulta local</option>
                             <option value="remote">Consulta remota</option>
                         </select>
+                    </div> -->
+
+                    <div class="input-group appointment-type">
+                        <label class="input-label" for="appointment-type">Tipo da consulta</label>
+                        <input class="input-field custom-select" name="appointment-type" id="appointment-type" placeholder="Selecione o tipo">
+
+                        <div class="select-DropDown">
+                            <div class="select-options-list">
+                                <div class="select-option" id="option-local" data-option="local">Consulta local</div>
+                                <div class="select-option" id="option-remote" data-option="remote">Consulta remota</div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="input-group appointment-date">

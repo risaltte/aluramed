@@ -444,12 +444,13 @@ main div.cards-container:last-child {
         color: var(--gray-500);
     }
 
-    .input-field, select {
+    .input-field {
         padding: 1rem;
         background: var(--white);
         border: 1px solid transparent;
         border-radius: 0.5rem;
         font-size: 1rem;
+        height: 3.5rem;
     }    
 
     .input-field::placeholder, select option::placeholder {
@@ -478,6 +479,42 @@ main div.cards-container:last-child {
     /* PLACEHOLDER SELECT - Para funcionar precisa colocar colocar o select como required */
     select:invalid { 
         color: var(--gray-200);
+    }
+
+    /* Custom select */
+    .select-DropDown {
+        background: var(--white);
+        border: 1px solid transparent;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        height: 7rem;
+        
+        overflow: auto;
+        display: none;
+    }
+
+    ::-webkit-scrollbar {
+        background-color: var(--gray-350);
+        width: 5px;
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--blue);
+        border-radius: 0.5rem;
+    }
+
+    .select-option {
+        height: 3.5rem;
+        padding: 1rem;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .select-option:hover {
+        background: var(--gray-150);
+        padding-left: 1.2rem;
+        transition: all 0.3s;
     }
 
 
