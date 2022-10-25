@@ -37,13 +37,13 @@ main {
 /* FORM */
 #add-appointment-action {
     display: none;
-    align-items: center;
+    /* align-items: center;
     gap: 0.25rem;
 
-    margin: 1rem 0 0.5rem;
+    margin: 1rem 0 0.5rem; */
 }
 
-.add-appointment-container {
+#add-appointment-container {
     display: none;
 
     background: #F3F3F3;
@@ -405,6 +405,7 @@ main div.cards-container:last-child {
         font-weight: 500;
 
         margin: 1rem 0 0.5rem;
+        cursor: pointer;
         transition: filter text-decoration 0.2s;
     }
 
@@ -413,9 +414,7 @@ main div.cards-container:last-child {
         text-decoration: underline;
     }
 
-    .add-appointment-container {
-        display: flex;
-
+    #add-appointment-container {
         background: #F3F3F3;
         border-radius: 0.5rem;
         border: 1px solid var(--gray-200);
@@ -423,7 +422,11 @@ main div.cards-container:last-child {
         margin-bottom: 2rem;
     }
 
-    .add-appointment-container form {
+    #add-appointment-container.show {
+        display: flex;
+    }
+
+    #add-appointment-container form {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
@@ -436,7 +439,7 @@ main div.cards-container:last-child {
     }
 
     .input-group + .input-group {
-        /* margin-left: 1rem; change for gap on .add-appointment-container form */
+        /* margin-left: 1rem; change for gap on #add-appointment-container form */
     }
 
     .input-label {
@@ -482,6 +485,10 @@ main div.cards-container:last-child {
     }
 
     /* Custom select */
+    .appointment-type-container {
+        position: relative;
+    }
+
     .select-DropDown {
         background: var(--white);
         border: 1px solid transparent;
@@ -489,8 +496,13 @@ main div.cards-container:last-child {
         font-size: 1rem;
         height: 7rem;
         
-        overflow: auto;
+        /* overflow: auto; */
         display: none;
+
+        position: absolute;
+        top: 6rem;
+        width: 100%;
+        z-index: 99;
     }
 
     ::-webkit-scrollbar {

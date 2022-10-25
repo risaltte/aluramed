@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // MOBILE
     const overlay = document.querySelector("#overlay");
     const buttonContainers = document.querySelectorAll(".button-container");
-    const buttonAdd = document.querySelector("#buttom-add");
-
-   
+    const buttonAdd = document.querySelector("#buttom-add");   
 
     buttonAdd.addEventListener('click', () => {
         // overlay.toggleAttribute('hidden');
@@ -14,6 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+
+
+
+    // DESKTOP
+    const addAppointmentLink = document.querySelector('#add-appointment-action');
+    const addAppointmentFormDesktop = document.querySelector('#add-appointment-container');
+
+    addAppointmentLink.addEventListener('click', () => {
+        addAppointmentFormDesktop.classList.toggle('show');
+    });
 
     // Custom select
     const appointmentTypeInput = document.querySelector("#appointment-type");
