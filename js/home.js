@@ -29,11 +29,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectOptionsList = document.querySelector(".select-DropDown");
     const selectOptions = document.querySelectorAll(".select-option");
 
-    appointmentTypeInput.addEventListener('focus', () => {
-        selectOptionsList.style.display = "block";
+    appointmentTypeInput.addEventListener('keypress', (event) => {
+        event.preventDefault();
     });
 
-    appointmentTypeInput.addEventListener('blur', () => {
+    appointmentTypeInput.addEventListener('focus', (event) => {
+        selectOptionsList.style.display = "block";
+        
+        setTimeout(() => {
+            selectOptionsList.style.transform = "translate(0px)"
+        }, 0);
+    });
+
+    appointmentTypeInput.addEventListener('blur', () => {        
+        selectOptionsList.style.transform = "translate(0px, -10px)";
         selectOptionsList.style.display = "none";
     });
 
