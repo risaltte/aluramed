@@ -40,7 +40,7 @@
 </p>
 
 <p align="center">
-  <img src=".github/cover.png" alt="lab-design-system.">
+  <img src=".github/img/cover.jpg" alt="Aluramed">
 </p>
 
 <h4 align="center">
