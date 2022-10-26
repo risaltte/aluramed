@@ -108,9 +108,10 @@ Run the application in development mode with Live Server as in the example below
 See on http://localhost:5500/
 
 <h2 id="demo">🧪 Demo</h2>
-<a style="margin-left: 16px" href="https://risaltte.github.io/aluramed/" target="_blank">
+<a style="display: flex; align-items: center, backgound: #4894FF, margin-left: 16px" href="https://risaltte.github.io/aluramed/" target="_blank">
 <!-- Link externo ou local(.github). -->
-  <img src=".github/img/storybook_button.png">  
+  <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+  Github pages
 </a>
 
 <h2 id="author">🦸 Autor</h2>
