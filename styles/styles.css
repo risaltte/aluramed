@@ -577,7 +577,7 @@ main div.cards-container:last-child {
     }
 
     .card {
-        max-width: 311px;
+        /* max-width: 333.5px; */
     }
 
     .nav-container {
@@ -638,7 +638,7 @@ main div.cards-container:last-child {
     }
 
     .card {
-        max-width: 340px;
-        min-width: 340px;
+        /* max-width: 340px;
+        min-width: 340px; */
     }
 }
