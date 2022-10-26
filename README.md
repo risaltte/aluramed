@@ -102,7 +102,7 @@ $ cd aluramed
 code .
 
 ```
-Run the application in development mode with Live Server
+Run the application in development mode with Live Server as in the example below:
 <img src=".github/img/vscode-live-server-explorer-menu-demo.gif">  
 
 See on http://localhost:5500/
