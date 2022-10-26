@@ -39,9 +39,9 @@
  <a href="#license">License</a>
 </p>
 
-<p align="center">
-  <img src=".github/img/cover.jpg" alt="Aluramed">
-</p>
+<div align="center">
+  <img src=".github/img/layout-desktop.jpg" alt="Aluramed layout desktop">
+</div>
 
 <h4 align="center">
   	🚧 7 Days of Code Aluramed | Done 🚧
@@ -60,9 +60,9 @@ Project developed during the challenge 7 Days of Code [Alura](https://www.alura.
   <img alt="Made by Alura" src="https://img.shields.io/badge/See%20on%20-Figma-4894FF">
 </a>
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 16px;">
-  <img src=".github/img/mobile-layout.jpg" width="400px" alt="Mobile Layout">
+  <img src=".github/img/layout-mobile.jpg" height="500px" alt="Mobile Layout">
 
-  <img src=".github/img/desktop-layout.jpg" width="400px" alt="Desktop Layout">
+<!--   <img src=".github/img/desktop-layout.jpg" width="400px" alt="Desktop Layout"> -->
 </p>
 
 <br />
