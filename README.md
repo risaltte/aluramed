@@ -13,19 +13,19 @@
 <p align="center">
   <!-- GitHub last commit -->
   <a href="https://github.com/risaltte/aluramed/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/risaltte/aluramed?color=81D8F7">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/risaltte/aluramed?color=4894FF">
   </a>
   <!-- GitHub language count -->
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/risaltte/aluramed?color=81D8F7">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/risaltte/aluramed?color=4894FF">
   <!-- GitHub top language -->
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/risaltte/aluramed?color=81D8F7">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/risaltte/aluramed?color=4894FF">
   <!-- Repository size -->
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/risaltte/aluramed?color=81D8F7">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/risaltte/aluramed?color=4894FF">
   <!-- Repository status -->
   <img src="https://www.repostatus.org/badges/latest/unsupported.svg">
   <!-- Link repo -->
   <a href="https://github.com/risaltte/aluramed/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/risaltte/aluramed?color=81D8F7" alt="License">
+    <img src="https://img.shields.io/github/license/risaltte/aluramed?color=4894FF" alt="License">
   </a>
 </p>
 
@@ -57,7 +57,7 @@ Project developed during the challenge 7 Days of Code [Alura](https://www.alura.
 
 <h2 id="layout">🎨 Layout</h2>
 <a href="https://www.figma.com/file/4OjHFmeHAgfX2JpRymOeA0/7days---Responsividade?node-id=6%3A622">
-  <img alt="Made by Alura" src="https://img.shields.io/badge/See%20on%20-Figma-81D8F7">
+  <img alt="Made by Alura" src="https://img.shields.io/badge/See%20on%20-Figma-4894FF">
 </a>
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 16px;">
   <img src=".github/img/mobile-layout.jpg" width="400px" alt="Mobile Layout">
