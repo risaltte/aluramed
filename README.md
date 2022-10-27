@@ -108,13 +108,15 @@ Run the application in development mode with Live Server as in the example below
 See on http://localhost:5500/
 
 <h2 id="demo">🧪 Demo</h2>
-[![Github](https://img.shields.io/badge/github-%231877F2.svg?&style=for-the-badge&logo=github&logoColor=white&color=black)](https://github.com/)
 
-<h2 id="author">🦸 Autor</h2>
-<a href="https://github.com/risaltte">
- <img style="border-radius: 50px;" src="https://avatars.githubusercontent.com/u/38223948?v=4" width="100px;" alt="Rafael Risalte"/>
- <br />
- <sub><b>Rafael Risalte</b></sub></a>
+[![Github](https://img.shields.io/badge/github-%231877F2.svg?&style=for-the-badge&logo=github&logoColor=white&color=black)](risaltte.github.io/aluramed)
+
+<h2 id="author">🦸 Author</h2>
+<a href="https://github.com/risaltte">  
+ <img style="border-radius: 50px;" src="https://avatars.githubusercontent.com/u/38223948?v=4" width="100px;" alt="Rafael Risalte"/>  
+ <br />  
+ <sub><b>Rafael Risalte</b></sub>
+</a>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafaelrisalte/)](https://www.linkedin.com/in/rafaelrisalte/)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:risaltte@gmail.com)](mailto:risaltte@gmail.com)
