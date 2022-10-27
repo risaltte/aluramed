@@ -109,7 +109,7 @@ See on http://localhost:5500/
 
 <h2 id="demo">🧪 Demo</h2>
 
-[![Github](https://img.shields.io/badge/github-%231877F2.svg?&style=for-the-badge&logo=github&logoColor=white&color=black)](risaltte.github.io/aluramed)
+[![Github](https://img.shields.io/badge/github-%231877F2.svg?&style=for-the-badge&logo=github&logoColor=white&color=black)](https://risaltte.github.io/aluramed/)
 
 <h2 id="author">🦸 Author</h2>
 <a href="https://github.com/risaltte">  
