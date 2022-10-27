@@ -84,8 +84,8 @@ The following tools were used in the construction of the project:
 Before you start, you will need to have the following tools installed on your machine:
 
 > [Git](https://git-scm.com).
-> In addition it is good to have an editor to work with the code as [VSCode](https://code.visualstudio.com/)
-> Extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for VSCode
+> In addition it is good to have an editor to work with the code as [VSCode](https://code.visualstudio.com/).
+> And Extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for VSCode.
 
 ### 🧭 Running the Project
 
