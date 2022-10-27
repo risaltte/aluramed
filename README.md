@@ -61,8 +61,6 @@ Project developed during the challenge 7 Days of Code [Alura](https://www.alura.
 </a>
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center; flex-direction: column; gap: 16px;">
   <img src=".github/img/layout-mobile.jpg" height="500px" alt="Mobile Layout">
-
-<!--   <img src=".github/img/desktop-layout.jpg" width="400px" alt="Desktop Layout"> -->
 </p>
 
 <br />
